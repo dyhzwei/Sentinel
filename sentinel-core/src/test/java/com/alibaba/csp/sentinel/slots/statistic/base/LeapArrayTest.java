@@ -17,6 +17,7 @@ package com.alibaba.csp.sentinel.slots.statistic.base;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.alibaba.csp.sentinel.util.TimeUtil;
 import org.junit.Test;
 
 import com.alibaba.csp.sentinel.test.AbstractTimeBasedTest;
@@ -27,7 +28,7 @@ import static org.junit.Assert.*;
  * @author Eric Zhao
  */
 public class LeapArrayTest extends AbstractTimeBasedTest {
-    
+
     @Test
     public void testGetValidHead() {
         int windowLengthInMs = 100;
